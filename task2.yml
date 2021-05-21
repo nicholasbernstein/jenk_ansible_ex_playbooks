@@ -1,0 +1,11 @@
+---
+- name: just ping ourselves
+  hosts: localhost
+  tasks:
+    - name: Run a command
+      command: figlet task 2
+      register: results
+
+    - name: debug output
+      debug:
+              var: results.stdout_lines
