@@ -2,8 +2,7 @@
 - name: just ping ourselves
   hosts: localhost
   tasks:
-    - name: install figlet
-      apt:
-              update_cache: yes
-              name: figlet
-              state: present
+    - name: example 1
+      debug:
+              msg: "This is an example debug message"
+
