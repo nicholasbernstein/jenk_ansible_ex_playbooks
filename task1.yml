@@ -1,5 +1,5 @@
 ---
-- name: just ping ourselves
+- name: task 1
   hosts: localhost
   tasks:
     - name: example 1
