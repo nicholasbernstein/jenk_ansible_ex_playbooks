@@ -1,6 +1,9 @@
 ---
-- name: Download 68k news
-  ansible.builtin.get_url:
-    url: http://68k.news
-    dest: news.html
-    mode: '0444'
+- name: just ping ourselves
+  hosts: localhost
+  tasks:
+    - name: Download 68k news
+      ansible.builtin.get_url:
+        url: http://68k.news
+        dest: news.html
+        mode: '0444'
