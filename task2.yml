@@ -5,5 +5,5 @@
     - name: Download 68k news
       ansible.builtin.get_url:
         url: http://68k.news
-        dest: news.html
+        dest: ./news.html
         mode: '0444'
